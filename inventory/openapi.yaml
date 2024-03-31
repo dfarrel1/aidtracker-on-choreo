@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  title: Hello
+  description: >-
+    Hello
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Choreo
+  url: https://choreo.dev
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: hello
+    description: Hello
+paths:
+  /hello:
+    summary: hello
+    get:
+      summary: hello
+      operationId: hello
+      tags:
+        - hello
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello, World! 
+
+
+  
